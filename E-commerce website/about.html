@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style_about.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+<body>
+
+
+    <nav class="navbar">
+        
+        <div class="menu-btn">
+            <div class="menu-btn_burger"></div>
+            
+        </div>
+        <div class="inside">Fashion....</div>
+        
+   
+   
+       <!-- for sign up button-->
+        <div class="show-btn">
+            <label for="show">Sign-Up</label>
+        </div>
+        
+        
+    </nav>
+
+
+
+    <div class="center">
+        <input type="checkbox" id="show">
+       
+        <div class="container">
+            <label for="show" class="close-btn fas fa-times"></label>
+           
+            <div class="text1">Login Form</div>
+            <form action="#">
+                <div class="data">
+                    <label>Email or Phone</label>
+                    <input type="text" required>
+                </div>
+                <div class="data">
+                    <label>Password</label>
+                    <input type="password" required>
+                </div>
+                <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit">Login</button>
+                </div>
+                <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+                
+                </div>
+            </form>
+        </div>
+    </div>  
+
+
+    <div class="base3">
+        <div class="side-bar">
+            <div class="close-btn1">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="menu1">
+                <div class="item"><a href="index.html"><i class="fas fa-desktop"></i> Dashboard</a></div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fas fa-table"></i> Clothes <i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a id="show_men" class="sub-item">Mens Wear</a>
+                        <a id="show_womens" class="sub-item">Womens</a>
+                        <a id="show_child" class="sub-item">Childrens</a>
+                    </div>
+                </div>
+            
+                <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+                
+    
+    
+            </div>
+        </div>
+    
+    </div>
+    
+
+        
+   
+    <div class="base">
+        <div class="content">
+            <h1>About</h1>
+            <h1>About</h1>
+        </div>
+       
+    </div>
+    <div class="logo">
+        <img src="logo.png" alt="">
+        <div class="family_logo">
+            <img src="Family.jpg" alt="">
+        </div>
+
+
+    </div>
+    <div class="inside_content">
+        <h3>Everyday fashion is our promise to you.</h3>
+
+    </div>
+    <div class="inside_content1">
+        If there’s one thing we know about our customers––they’re busy living. They’re going to work. They’re raising 
+        kids. They’re hitting the gym. They’re studying
+         for tests. They’re headed out on Friday night. They’re staying in with Sunday pancakes.Keeping you effortlessly stylish throug
+        hout the day lies at the core of what we do. At Clothing Shop Online, we’ve made it our mission to provide simple, 
+        affordable wardrobe staples to people who love to live. We’ve got the looks you want, from the brands you love,
+         in the colors and sizes you need.Skip the lines at the mall; we’ve created an online shopping experience that fits your schedule 
+        just as well as it does your budget.Within minutes, you can stock up on the leading brands you love to wear every day. Imag
+        ine Gildan, Bella + Canvas, and Hanes, right at your fingertips. Our intuitive shopping experience was desig
+        ned to help you quickly find your favs, while discovering new ones along the way.At Clothing Sho
+        p Online, we want you to be comfortable, confident, and carefree – in what you wear and how you shop. Let us dress your every day.
+    </div>
+    <div class="contact">
+        <h3>Contact No. - +9153767376XXX</h3>
+    </div>
+    <div class="base1">
+        <div class="centerdiv">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-2x  fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <i class="fa fa-2x fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-2x fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa fa-2x fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+            $('.menu-btn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility","hidden");
+    
+            
+            });
+            $('.close-btn1').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility","visible");
+            
+            });
+    
+        });
+        </script>
+    
+   
+    
+    
+    
+</body>
+</html>
